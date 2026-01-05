@@ -11,10 +11,10 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState<Tab>('movies');
 
   const movies = [
-    { id: 1, title: 'Космический рейс', genre: 'Sci-Fi', rating: 8.9, gradient: 'from-purple-600 to-pink-600' },
-    { id: 2, title: 'Неоновые огни', genre: 'Драма', rating: 9.2, gradient: 'from-blue-500 to-purple-600' },
-    { id: 3, title: 'Звёздный путь', genre: 'Приключения', rating: 8.5, gradient: 'from-orange-500 to-red-600' },
-    { id: 4, title: 'Цифровой мир', genre: 'Фантастика', rating: 9.0, gradient: 'from-cyan-500 to-blue-600' },
+    { id: 1, title: 'Космический рейс', genre: 'Sci-Fi', rating: 8.9, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/df3c0e34-2d20-4b98-8cc7-bdb83e66ad31.jpg' },
+    { id: 2, title: 'Неоновые огни', genre: 'Драма', rating: 9.2, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/c7b522ac-e9d0-41f0-9cea-49731f017fa1.jpg' },
+    { id: 3, title: 'Звёздный путь', genre: 'Приключения', rating: 8.5, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/e25e4358-2033-47f1-a383-6f75d42ff831.jpg' },
+    { id: 4, title: 'Цифровой мир', genre: 'Фантастика', rating: 9.0, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/df3c0e34-2d20-4b98-8cc7-bdb83e66ad31.jpg' },
   ];
 
   const music = [
@@ -117,8 +117,13 @@ const Index = () => {
                   key={movie.id}
                   className="group relative overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
-                  <div className={`h-64 bg-gradient-to-br ${movie.gradient} flex items-end p-6`}>
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all" />
+                  <div className="relative h-80 flex items-end p-6">
+                    <img 
+                      src={movie.image} 
+                      alt={movie.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/90 transition-all" />
                     <div className="relative z-10 w-full">
                       <Badge className="mb-2 bg-white/20 backdrop-blur-sm border-0 text-white">
                         {movie.genre}
