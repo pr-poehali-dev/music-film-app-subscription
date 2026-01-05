@@ -11,10 +11,10 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState<Tab>('movies');
 
   const movies = [
-    { id: 1, title: 'Космический рейс', genre: 'Sci-Fi', rating: 8.9, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/df3c0e34-2d20-4b98-8cc7-bdb83e66ad31.jpg' },
-    { id: 2, title: 'Неоновые огни', genre: 'Драма', rating: 9.2, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/c7b522ac-e9d0-41f0-9cea-49731f017fa1.jpg' },
-    { id: 3, title: 'Звёздный путь', genre: 'Приключения', rating: 8.5, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/e25e4358-2033-47f1-a383-6f75d42ff831.jpg' },
-    { id: 4, title: 'Цифровой мир', genre: 'Фантастика', rating: 9.0, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/df3c0e34-2d20-4b98-8cc7-bdb83e66ad31.jpg' },
+    { id: 1, title: 'Форсаж', genre: 'Боевик', rating: 9.5, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/c7b2661b-9d94-457d-a5da-dfa67263a17a.jpg' },
+    { id: 2, title: 'Космический рейс', genre: 'Sci-Fi', rating: 8.9, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/df3c0e34-2d20-4b98-8cc7-bdb83e66ad31.jpg' },
+    { id: 3, title: 'Неоновые огни', genre: 'Драма', rating: 9.2, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/c7b522ac-e9d0-41f0-9cea-49731f017fa1.jpg' },
+    { id: 4, title: 'Звёздный путь', genre: 'Приключения', rating: 8.5, image: 'https://cdn.poehali.dev/projects/1b6b28f3-a7d1-489a-a9fe-dbe788325073/files/e25e4358-2033-47f1-a383-6f75d42ff831.jpg' },
   ];
 
   const music = [
